@@ -5,7 +5,7 @@
 *   - seperator: A string value to separate the elements. If no seperator is provided, they would be split using a comma.
 */
 
-Array.prototype.joinRemade = function(seperator = ',') {
+Array.prototype.joinRecreated = function(seperator = ',') {
     let final = this[0]
     for (let i = 1; i < this.length; i++) {
         final = `${final}${seperator}${this[i]}`
@@ -16,7 +16,7 @@ Array.prototype.joinRemade = function(seperator = ',') {
 
 /* Example */
 const arr = ['This', 'Is', 'A', 'Test', 123, 456]
-let joinedArray = arr.joinRemade(' ')
+let joinedArray = arr.joinRecreated(' ')
 console.log(joinedArray) // This Is A Test 123 456
-joinedArray = arr.joinRemade()
+joinedArray = arr.joinRecreated()
 console.log(joinedArray) // This,Is,A,Test,123,456
