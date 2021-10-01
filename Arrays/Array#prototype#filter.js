@@ -6,7 +6,7 @@
 *   - thisValue: The value passed in for the value of the this keyword in the callback function.
 */
 
-Array.prototype.filter = function(callback) {
+Array.prototype.filterRecreated = function(callback) {
     let filtered = []
     for (let i = 0; i < this.length; i++) {
         if (callback(this[i], i)) filtered.push(this[i])
