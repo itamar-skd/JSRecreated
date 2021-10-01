@@ -1,5 +1,5 @@
 /**
-* Array.prototype.fromEntries()
+* Array.prototype.fromEntries() - Also known as Object.fromEntries (Slightly modified to be a prototype method of an array as it looks cleaner tbf)
 * Takes in an array of nested arrays, formed of key-value pairs, turning them into an object of key-value pairs.
 */
 
