@@ -1,5 +1,5 @@
 /**
-* Array.prototype.map
+* Array.prototype.map()
 * Description: Returns a modified array based on a given condition.
 * Parameters:
 *   - callback: The callback function used to return a new element based on a condition. The callback function takes in 3 parameters - The element currently being modified, its index, and the initial array.
