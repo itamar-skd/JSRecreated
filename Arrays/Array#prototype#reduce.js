@@ -6,7 +6,7 @@
 *   - initialValue: A value to represent previousValue at the beginning of the operation.
 */
 
-Array.prototype.reduceRemade = function(callback, initialValue = this[0]) {
+Array.prototype.reduceRecreated = function(callback, initialValue = this[0]) {
     let currentValue = initialValue
     const start = initialValue === this[0] ? 1 : 0
     for (let i = start; i < this.length; i++) {
@@ -18,5 +18,5 @@ Array.prototype.reduceRemade = function(callback, initialValue = this[0]) {
 
 /* Example */
 const arr = [1, 2, 3]
-const sum = arr.reduceRemade((a, b) => a + b)
+const sum = arr.reduceRecreated((a, b) => a + b)
 console.log(sum) // 6
