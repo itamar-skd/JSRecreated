@@ -7,6 +7,7 @@
 */
 
 String.prototype.endsWithRecreated = function(searchString, length = this.length) {
+    if (length > this.length) throw new Error('The given length was larger than the calling string\'s length.')
     let sliced = ''
     for (let i = length - searchString.length; i < length; i++) {
         sliced += this[i]
