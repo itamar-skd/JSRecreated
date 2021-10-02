@@ -7,7 +7,12 @@
 */
 
 String.prototype.endsWithRecreated = function(searchString, length = this.length) {
-    return this.slice(length - searchString.length, length) === searchString
+    let sliced = ''
+    for (let i = length - searchString.length; i < length; i++) {
+        sliced += this[i]
+    }
+
+    return sliced === searchString
 }
 
 /* Example */
