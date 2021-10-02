@@ -17,6 +17,6 @@ Array.prototype.sliceRecreated = function(start = 0, end = this.length) {
 
 /* Example */
 const arr = ['The', 'quick', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'dog.']
-console.log(arr.slice()) // ['The', 'quick', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'dog.']
-console.log(arr.slice(2, 4)) // [ 'brown', 'fox' ]
-console.log(arr.slice(5)) // [ 'over', 'the', 'lazy', 'dog.' ]
+console.log(arr.sliceRecreated()) // ['The', 'quick', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'dog.']
+console.log(arr.sliceRecreated(2, 4)) // [ 'brown', 'fox' ]
+console.log(arr.sliceRecreated(5)) // [ 'over', 'the', 'lazy', 'dog.' ]
