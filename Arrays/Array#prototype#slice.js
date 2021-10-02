@@ -9,7 +9,7 @@
 Array.prototype.sliceRecreated = function(start = 0, end = this.length) {
     let final = []
     for (let i = start; i < end; i++) {
-        final += [...final, this[i]]
+        final = [...final, this[i]]
     }
 
     return final
